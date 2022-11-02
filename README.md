@@ -44,7 +44,7 @@ const statichtml = "https://raw.githubusercontent.com/bituplink/OneHtmlNav/maste
 修改上方网址为自己喜欢的网址，只支持单html，建议css和js和script集成进html里
 
 -------
-## [cloudflare设置](https://dash.cloudflare.com)
+## [cloudflare Work](https://dash.cloudflare.com)
 
 ### 去Workers KV中创建一个命名空间
 
