@@ -35,7 +35,7 @@ const short_url_key = 'shorturl';   //完整缩短后链接，'shorturl'是为�
  "shorturl":"https://url.com/dfce"
 }
 ```
-## 自定义首页[index.js](../04d9c11c960017f4e0b1aea5b518019602526f8f/index.js#L163)
+## 自定义首页[index.js](../383fc4a0d8de613c02f5a3f4de048a06ce7004cb/index.js#L163)
 
 ```js
 const statichtml = "https://raw.githubusercontent.com/bituplink/OneHtmlNav/master/goodweb.html"
