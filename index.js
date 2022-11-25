@@ -93,6 +93,7 @@ const index = `<!doctype html>
                 <select class="form-control" id="select">
                     <option value="link">🔗 链接</option>
                     <option value="text">📄 文本</option>
+                    <option value="html">📄 网页</option>
                 </select>
                 <input type="text" id="name" placeholder="自定义后缀" class="input-group-text">
             </div>
@@ -207,14 +208,17 @@ async function handleRequest(request) {
             // redirect
         if (link['type'] == "link") {
             return Response.redirect(link['value'], 302);
-        } else {
+        } 
+        if (link['type'] == "html") {
+		     return new Response(link['value'], {
+                headers: { 'content-type': 'text/html; charset=utf-8' },
+            })
+		} else {
             // textarea
             return new Response(`${link['value']}`, {
                 headers: { 'content-type': 'text/plain; charset=utf-8' },
             })
         }
     }
-    return new Response(`403`, {
-        headers: { 'content-type': 'text/plain; charset=utf-8' },
-    })
+    return new Response('Not Found.',{ status: 404 })
 }
