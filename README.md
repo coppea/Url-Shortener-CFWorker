@@ -1,6 +1,5 @@
-使用Cloudflare Worker创建的URL缩短器｜支持自定义首页｜支持Menu Short｜支持短网址和文本分享
+使用Cloudflare Worker创建的URL缩短器｜支持自定义首页｜支持Menu Short｜支持短网址、文本、网页分享
 
-**首页**
 
 <img width="800" alt="首页" src="https://user-images.githubusercontent.com/86509331/199412206-b4aa8b77-ab4c-4328-8143-cc7e0974a235.png">
 
