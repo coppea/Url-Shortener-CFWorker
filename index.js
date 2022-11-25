@@ -220,5 +220,7 @@ async function handleRequest(request) {
             })
         }
     }
-    return new Response('Not Found.',{ status: 404 })
+ return new Response(`403`, {
+        headers: { 'content-type': 'text/plain; charset=utf-8' },
+    })	
 }
