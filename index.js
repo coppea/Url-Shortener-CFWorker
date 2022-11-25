@@ -91,14 +91,14 @@ const index = `<!doctype html>
             <div id="link_div" class="input-group mb-3">
                 <!-- <input type="text" id="link" class="form-control" placeholder="link" aria-label="link"> -->
                 <select class="form-control" id="select">
-                    <option value="link">🔗 链接</option>
-                    <option value="text">📄 文本</option>
-                    <option value="html">📄 网页</option>
+                    <option value="link">长链接</option>
+                    <option value="text">纯文本</option>
+                    <option value="html">html网页</option>
                 </select>
                 <input type="text" id="name" placeholder="自定义后缀" class="input-group-text">
             </div>
             <div id="text_div">
-                <textarea id="link" placeholder="输入网址/文本" class="form-control" rows="10"></textarea><br>
+                <textarea id="link" placeholder="输入链接/文本/html源代码" class="form-control" rows="10"></textarea><br>
             </div>
             <p class="lead">
                 <a href="#" onclick="getlink()" class="btn btn-lg btn-secondary fw-bold border-white bg-white">生成</a>
